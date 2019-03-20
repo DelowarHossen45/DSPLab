@@ -1,0 +1,19 @@
+N = 50;
+f=1/N;
+a=20;
+n = 0:1:N-1;
+
+
+
+T = 50;
+F=1/T;
+a=19;
+t = 0:F:4*T;
+x = a*cos(2*pi*F*t);
+plot(t,x);
+
+
+
+x = a*cos(2*pi*n*f+20);
+subplot(2,1,2);  plot(n,x)
+subplot(2,1,1);  stem(n,x)
